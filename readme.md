@@ -23,7 +23,7 @@ The following reconstruction methods are provided:
 
 The complete simulated dataset used for training and evaluation will be released once all GDPR (RGPD) compliance requirements have been fulfilled.
 
-At this stage, only the demo data is publicly available.
+At this stage, only the demo data (Experimental IEC) is publicly available [here](https://www.creatis.insa-lyon.fr/nextcloud/index.php/s/fnetpMipotdckXe).
 
 ## Citation
 
