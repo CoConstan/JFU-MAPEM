@@ -1,0 +1,39 @@
+io:
+  data_path: 'Data/'
+  model_path: 'weights/MAPEM/U_MAPEM.pth'
+  output_path: 'output/demo'
+  experiment_name: 'U_MAPEM'
+
+
+eval:
+  save_masks : True
+  verbose : True
+
+# MODEL TRAINING PARAMETERS
+model:
+  name: 'U_MAPEM'
+  pretrained: False
+  beta: 0.5
+  n_iter: 6
+
+
+image_metadata:
+  size: [128,128,128]
+  spacing: [0.47952,0.47952,0.47952]
+
+proj_metadata:
+  size: [128,128]
+  spacing: [0.47952,0.47952]
+  n_angles: 120
+  radii: 28
+
+training:
+  batch_size: 1
+  num_workers: 64
+  epochs: 30
+  learning_rate: 0.0001
+  patience: 30
+  device: cuda
+  optimizer: 'AdamW'
+  loss_function: 'MSELoss'
+
